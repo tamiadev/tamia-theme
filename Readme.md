@@ -19,7 +19,7 @@ const space = 8;
 module.exports = {
   font: {
     heading: '"Avenir Next", "Helvetica Neue", sans-serif',
-    body: '"Lora", "Merriweather", "Georgia", serif',
+    body: '"Lora", "Merriweather", "Georgia", serif'
   },
   space: {
     xxs: `${space / 4}px`,
@@ -28,17 +28,17 @@ module.exports = {
     m: `${space * 2}px`,
     l: `${space * 4}px`,
     xl: `${space * 8}px`,
-    xxl: `${space * 16}px`,
-  },
+    xxl: `${space * 16}px`
+  }
 };
 ```
 
 And use it like this in your components:
 
 ```jsx
-import React from "react";
-import styled from "react-emotion";
-import theme from "tamia-theme";
+import React from 'react';
+import styled from 'react-emotion';
+import theme from 'tamia-theme';
 
 const Container = styled.div`
   display: flex;
@@ -56,8 +56,8 @@ const theme = require('@unicorn/component-library/theme');
 module.exports = merge(theme, {
   font: {
     heading: '"Avenir Next", "Helvetica Neue", sans-serif',
-    body: '"Lora", "Merriweather", "Georgia", serif',
-  },
+    body: '"Lora", "Merriweather", "Georgia", serif'
+  }
 });
 ```
 
@@ -74,7 +74,8 @@ Add the plugin to your `.babelrc`:
   "plugins": [
     "tamia-theme/babel",
     [
-      "emotion", {
+      "emotion",
+      {
         "extractStatic": true
       }
     ]
