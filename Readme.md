@@ -84,7 +84,7 @@ Add the plugin to your `.babelrc`:
 
 ## Change log
 
-The change log can be found on the [Releases page](https://github.com/sapegin/tamia-theme/releases).
+The change log can be found on the [Releases page](https://github.com/tamiadev/tamia-theme/releases).
 
 ## Contributing
 
@@ -92,6 +92,6 @@ Everyone is welcome to contribute. Please take a moment to review the [contribut
 
 ## Authors and license
 
-[Artem Sapegin](http://sapegin.me) and [contributors](https://github.com/sapegin/tamia-theme/graphs/contributors).
+[Artem Sapegin](http://sapegin.me) and [contributors](https://github.com/tamiadev/tamia-theme/graphs/contributors).
 
 MIT License, see the included [License.md](License.md) file.
