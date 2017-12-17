@@ -1,0 +1,59 @@
+{
+  "name": "tamia-theme",
+  "version": "0.1.0",
+  "description": "Simple theming for static sites",
+  "author": {
+    "name": "Artem Sapegin",
+    "url": "http://sapegin.me"
+  },
+  "homepage": "https://github.com/sapegin/tamia-theme",
+  "repository": "sapegin/tamia-theme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "main": "index.js",
+  "files": [
+    "babel.js",
+    "index.js",
+    "merge.js"
+  ],
+  "scripts": {
+    "lint": "eslint . --cache --fix",
+    "pretest": "npm run lint",
+    "precommit": "lint-staged",
+    "test:jest": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test": "npm run test:jest"
+  },
+  "keywords": [
+    "theme",
+    "theming",
+    "static",
+    "site",
+    "emotion",
+    "css-in-js",
+    "babel-plugin"
+  ],
+  "dependencies": {
+    "deepmerge": "^2.0.1",
+    "dlv": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "eslint": "^4.13.1",
+    "eslint-config-tamia": "^4.2.3",
+    "eslint-plugin-prettier": "^2.3.1",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.2"
+  },
+  "lint-staged": {
+    "*undefined": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}

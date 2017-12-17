@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`load theme 1`] = `
+Object {
+  "font": "Comic Sans",
+  "foo": Object {
+    "bar": Object {
+      "baz": 42,
+    },
+  },
+  "space": Object {
+    "l": "32px",
+    "m": "16px",
+    "s": "8px",
+    "xl": "64px",
+    "xs": "4px",
+    "xxs": "2px",
+  },
+}
+`;

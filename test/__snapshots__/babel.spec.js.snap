@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`do not touch unrelated code 1`] = `
+"
+import styled from \\"react-emotion\\";
+import theme from \\"./test/fixtures/theme\\";
+const a = theme.space.xl;
+const Container = styled(\\"div\\")\`
+  color: deepskyblue;
+  margin-bottom: \${a};
+\`;"
+`;
+
+exports[`inline multiple theme variables 1`] = `
+"
+import styled from \\"react-emotion\\";
+import theme from \\"./test/fixtures/theme\\";
+const Container = styled(\\"div\\")\`
+  color: deepskyblue;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  margin-left: 32px;
+  margin-right: 64px;
+\`;"
+`;
+
+exports[`inline theme variables 1`] = `
+"
+import styled from \\"react-emotion\\";
+import theme from \\"./test/fixtures/theme\\";
+const Container = styled(\\"div\\")\`
+  color: deepskyblue;
+  margin-bottom: 64px;
+\`;"
+`;
+
+exports[`works with any level of nesting 1`] = `
+"
+import styled from \\"react-emotion\\";
+import theme from \\"./test/fixtures/theme\\";
+const Container = styled(\\"div\\")\`
+  color: deepskyblue;
+  font-family: Comic Sans;
+  margin: 32px;
+  padding: 42;
+\`;"
+`;

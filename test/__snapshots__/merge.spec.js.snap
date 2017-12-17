@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`merge objects 1`] = `
+Object {
+  "a": 42,
+  "b": 2,
+  "c": 3,
+}
+`;
