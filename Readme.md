@@ -1,5 +1,7 @@
 # tamia-theme
 
+[![Build Status](https://travis-ci.org/sapegin/tamia-theme.svg)](https://travis-ci.org/sapegin/tamia-theme)
+
 Simple theming for static sites. Works well with [Emotion](https://emotion.sh/).
 
 ## Installation
