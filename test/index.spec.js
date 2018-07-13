@@ -19,3 +19,9 @@ test('throw when theme file not found', () => {
 	const fn = () => require(indexPath);
 	expect(fn).toThrow('Theme not found');
 });
+
+test('throw when theme cannot be required', () => {
+	process.chdir(path.resolve(__dirname, 'fixtures/broken'));
+	const fn = () => require(indexPath);
+	expect(fn).toThrow('Cannot load theme');
+});

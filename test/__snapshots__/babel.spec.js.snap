@@ -3,7 +3,7 @@
 exports[`do not touch unrelated code 1`] = `
 "
 import styled from \\"react-emotion\\";
-import theme from \\"./test/fixtures/theme\\";
+import theme from \\"./test/fixtures/src/theme\\";
 const a = theme.space.xl;
 const Container = styled(\\"div\\")\`
   color: deepskyblue;
@@ -14,7 +14,7 @@ const Container = styled(\\"div\\")\`
 exports[`inline multiple theme variables 1`] = `
 "
 import styled from \\"react-emotion\\";
-import theme from \\"./test/fixtures/theme\\";
+import theme from \\"./test/fixtures/src/theme\\";
 const Container = styled(\\"div\\")\`
   color: deepskyblue;
   margin-top: 8px;
@@ -27,7 +27,7 @@ const Container = styled(\\"div\\")\`
 exports[`inline theme variables 1`] = `
 "
 import styled from \\"react-emotion\\";
-import theme from \\"./test/fixtures/theme\\";
+import theme from \\"./test/fixtures/src/theme\\";
 const Container = styled(\\"div\\")\`
   color: deepskyblue;
   margin-bottom: 64px;
@@ -37,7 +37,7 @@ const Container = styled(\\"div\\")\`
 exports[`works with any level of nesting 1`] = `
 "
 import styled from \\"react-emotion\\";
-import theme from \\"./test/fixtures/theme\\";
+import theme from \\"./test/fixtures/src/theme\\";
 const Container = styled(\\"div\\")\`
   color: deepskyblue;
   font-family: Comic Sans;

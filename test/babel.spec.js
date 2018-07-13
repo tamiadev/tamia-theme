@@ -6,7 +6,7 @@ const compile = source => babel.transform(source, { plugins: [plugin] }).code;
 test('do not touch unrelated code', () => {
 	const result = compile(`
 import styled from "react-emotion";
-import theme from "./test/fixtures/theme";
+import theme from "./test/fixtures/src/theme";
 const a = theme.space.xl;
 const Container = styled("div")\`
   color: deepskyblue;
@@ -19,7 +19,7 @@ const Container = styled("div")\`
 test('inline theme variables', () => {
 	const result = compile(`
 import styled from "react-emotion";
-import theme from "./test/fixtures/theme";
+import theme from "./test/fixtures/src/theme";
 const Container = styled("div")\`
   color: deepskyblue;
   margin-bottom: \${theme.space.xl};
@@ -31,7 +31,7 @@ const Container = styled("div")\`
 test('inline multiple theme variables', () => {
 	const result = compile(`
 import styled from "react-emotion";
-import theme from "./test/fixtures/theme";
+import theme from "./test/fixtures/src/theme";
 const Container = styled("div")\`
   color: deepskyblue;
   margin-top: \${theme.space.s};
@@ -46,7 +46,7 @@ const Container = styled("div")\`
 test('works with any level of nesting', () => {
 	const result = compile(`
 import styled from "react-emotion";
-import theme from "./test/fixtures/theme";
+import theme from "./test/fixtures/src/theme";
 const Container = styled("div")\`
   color: deepskyblue;
   font-family: \${theme.font};
@@ -73,7 +73,7 @@ test('throw when value not found', () => {
 	const fn = () =>
 		compile(`
 import styled from "react-emotion";
-import theme from "./test/fixtures/theme";
+import theme from "./test/fixtures/src/theme";
 const Container = styled("div")\`
   margin: \${theme.pizza.salami};
 \`;
