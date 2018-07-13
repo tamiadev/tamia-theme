@@ -1,6 +1,6 @@
 {
   "name": "tamia-theme",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Simple theming for static sites",
   "author": {
     "name": "Artem Sapegin",
@@ -15,8 +15,7 @@
   "main": "index.js",
   "files": [
     "babel.js",
-    "index.js",
-    "merge.js"
+    "index.js"
   ],
   "scripts": {
     "lint": "eslint . --cache --fix",
