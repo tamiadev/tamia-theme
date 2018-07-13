@@ -25,7 +25,9 @@
     "test:jest": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test": "npm run test:jest"
+    "test": "npm run test:jest",
+    "posttest": "npm run format",
+    "format": "prettier --write '**/*.{js,md}'"
   },
   "keywords": [
     "theme",
@@ -37,17 +39,16 @@
     "babel-plugin"
   ],
   "dependencies": {
-    "dlv": "^1.1.0"
+    "dlv": "^1.1.2"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "eslint": "^4.13.1",
-    "eslint-config-tamia": "^4.2.3",
-    "eslint-plugin-prettier": "^2.3.1",
+    "babel-core": "^6.26.3",
+    "eslint": "^5.1.0",
+    "eslint-config-tamia": "^6.0.0",
     "husky": "^0.14.3",
-    "jest": "^21.2.1",
-    "lint-staged": "^6.0.0",
-    "prettier": "^1.9.2"
+    "jest": "^23.4.0",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.7"
   },
   "lint-staged": {
     "*.js": [

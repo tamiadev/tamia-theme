@@ -31,7 +31,9 @@ function getAddress(node, state) {
  * @return {object[]}
  */
 function getThemeExpressions(path, state) {
-	return path.node.expressions.filter(x => getNodeSource(x, state).startsWith(`${VAR_NAME}.`));
+	return path.node.expressions.filter(x =>
+		getNodeSource(x, state).startsWith(`${VAR_NAME}.`)
+	);
 }
 
 /**
@@ -123,7 +125,9 @@ function plugin(babel) {
 					TemplateLiteral(path) {
 						const themeExpressions = getThemeExpressions(path, state);
 						if (themeExpressions.length > 0) {
-							path.replaceWith(buildTemplateElement(path, themeExpressions, state, t));
+							path.replaceWith(
+								buildTemplateElement(path, themeExpressions, state, t)
+							);
 						}
 					},
 				});
