@@ -17,7 +17,7 @@ Create a `theme.js` file in the root folder:
 ```js
 const space = 8;
 module.exports = {
-  font: {
+  fonts: {
     heading: '"Avenir Next", "Helvetica Neue", sans-serif',
     body: '"Lora", "Merriweather", "Georgia", serif'
   },
@@ -46,15 +46,15 @@ const Container = styled.div`
 `;
 ```
 
-### Set up a component library
+### Set up an app
 
 Create a `theme.js` file in the root folder:
 
 ```js
-const merge = require('tamia-theme/merge');
+const merge = require('lodash/merge');
 const theme = require('@unicorn/component-library/theme');
 module.exports = merge(theme, {
-  font: {
+  fonts: {
     heading: '"Avenir Next", "Helvetica Neue", sans-serif',
     body: '"Lora", "Merriweather", "Georgia", serif'
   }
